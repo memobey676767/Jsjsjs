@@ -40,16 +40,16 @@ START_TEXT = """
 HELP_TEXT = f"""
 <u>❄ **bunlar benim komutlarım {BOT_NAME} :**</u>
 
-๏ /play : şarkı başlatır.
-๏ /pause : şarki durdurur.
-๏ /resume : şarkıyı calmaya devam eder.
-๏ /skip : sıradaki parçaya atlatır.
-๏ /end : şarkıyı kapatır.
+๏ /oynat : şarkı başlatır.
+๏ /dur : şarki durdurur.
+๏ /devam : şarkıyı calmaya devam eder.
+๏ /atla : sıradaki parçaya atlatır.
+๏ /son : şarkıyı kapatır.
 
 ๏ /ping : sʜᴏᴡ ᴛʜᴇ ᴩɪɴɢ ᴀɴᴅ sʏsᴛᴇᴍ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
 ๏ /sudolist : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ sᴜᴅᴏ ᴜsᴇʀs ᴏғ ᴛʜᴇ ʙᴏᴛ.
 
-๏ /song : şarkıyı arar bulur indirir.
+๏ /bul : /vbul şarkıyı arar bulur indirir.
 
 ๏ /search : bilgi arar.
 """
