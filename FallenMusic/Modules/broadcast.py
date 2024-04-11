@@ -39,7 +39,7 @@ async def broadcast(_, message: Message):
     else:
         if len(message.command) < 2:
             return await message.reply_text(
-                "**ᴇxᴀᴍᴘʟᴇ:**\n\n/broadcast [ᴍᴇssᴀɢᴇ] ᴏʀ [ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ]"
+                "**ᴇxᴀᴍᴘʟᴇ:**\n\n/reklam [yazınız] ᴏʀ [ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ]"
             )
         query = message.text.split(None, 1)[1]
     sent = 0
