@@ -30,7 +30,7 @@ from config import OWNER_ID
 from FallenMusic import app, app2
 
 
-@app.on_message(filters.command("broadcast") & filters.user(OWNER_ID))
+@app.on_message(filters.command("reklam") & filters.user(OWNER_ID))
 async def broadcast(_, message: Message):
     brep = await message.reply_text("sᴛᴀʀᴛᴇᴅ ᴀssɪsᴛᴀɴᴛ ʙʀᴏᴀᴅᴄᴀsᴛ...")
     if message.reply_to_message:
