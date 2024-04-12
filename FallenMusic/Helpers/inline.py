@@ -49,10 +49,10 @@ pm_buttons = [
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
-    [InlineKeyboardButton(text="🔰yardım & komutlar🔰", callback_data="fallen_help")],
+    [InlineKeyboardButton(text="✅yardım & komutlar✅", callback_data="fallen_help")],
     [
         InlineKeyboardButton(text="📑kanal📑", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="📩gurup📩", url=config.SUPPORT_CHAT),
+        InlineKeyboardButton(text="📩Gurup📩", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
@@ -72,7 +72,7 @@ gp_buttons = [
     ],
     [
         InlineKeyboardButton(text="📑kanal📑", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="📩 gurup 📩", url=config.SUPPORT_CHAT),
+        InlineKeyboardButton(text="📩 Gurup 📩", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
@@ -102,7 +102,7 @@ helpmenu = [
 
 
 help_back = [
-    [InlineKeyboardButton(text="📩 gurup 📩", url=config.SUPPORT_CHAT)],
+    [InlineKeyboardButton(text="📩 Gurup 📩", url=config.SUPPORT_CHAT)],
     [
         InlineKeyboardButton(text="🥀geri🥀", callback_data="fallen_help"),
         InlineKeyboardButton(text="🥀kapat🥀", callback_data="close"),
