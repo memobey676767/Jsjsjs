@@ -72,6 +72,6 @@ async def skip_str(_, message: Message):
         img = await gen_thumb(videoid, user_id)
         return await message.reply_photo(
             photo=img,
-            caption=f"**➻ şarkı başladı**\n\n‣ **bilgi :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **süre :** `{duration}` dakika\n‣ **istek sahibi :** {req_by}",
+            caption=f"**🎧şarkı başladı**\n\n‣ **📑bilgi :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **⏳süre :** `{duration}` dakika\n‣ **💬istek sahibi :** {req_by}",
             reply_markup=buttons,
         )
