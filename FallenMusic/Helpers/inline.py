@@ -45,7 +45,7 @@ buttons = InlineKeyboardMarkup(
 pm_buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            text="beni grubuna ekle",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
