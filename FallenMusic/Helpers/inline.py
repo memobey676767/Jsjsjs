@@ -33,10 +33,10 @@ close_key = InlineKeyboardMarkup(
 buttons = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="▷", callback_data="resume_cb"),
-            InlineKeyboardButton(text="II", callback_data="pause_cb"),
-            InlineKeyboardButton(text="‣‣I", callback_data="skip_cb"),
-            InlineKeyboardButton(text="▢", callback_data="end_cb"),
+            InlineKeyboardButton(text="⏸️", callback_data="resume_cb"),
+            InlineKeyboardButton(text="◀️", callback_data="pause_cb"),
+            InlineKeyboardButton(text="⏩", callback_data="skip_cb"),
+            InlineKeyboardButton(text="⏹️", callback_data="end_cb"),
         ]
     ]
 )
@@ -49,16 +49,16 @@ pm_buttons = [
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
-    [InlineKeyboardButton(text="🥀yardım & komutlar🥀", callback_data="fallen_help")],
+    [InlineKeyboardButton(text="🔰yardım & komutlar🔰", callback_data="fallen_help")],
     [
-        InlineKeyboardButton(text="🥀kanal🥀", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="🥀gurup🥀", url=config.SUPPORT_CHAT),
+        InlineKeyboardButton(text="📑kanal📑", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="📩gurup📩", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
             text="☁️ kaynak kod ☁️", url="https://github.com/AnonymousX1025/FallenMusic"
         ),
-        InlineKeyboardButton(text="🥀 sahibi 🥀", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="👑 sahibi 👑", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -66,19 +66,19 @@ pm_buttons = [
 gp_buttons = [
     [
         InlineKeyboardButton(
-            text="beni grubuna ekle",
+            text="🥺beni grubuna ekle🥺",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
-        InlineKeyboardButton(text="🥀kanal🥀", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="🥀 gurup 🥀", url=config.SUPPORT_CHAT),
+        InlineKeyboardButton(text="📑kanal📑", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="📩 gurup 📩", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
             text="☁️ kaynak kod ☁️", url="https://github.com/TheAnonymous2005/FallenMusic"
         ),
-        InlineKeyboardButton(text="🥀 sahibi 🥀", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="👑 sahibi 👑", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -86,25 +86,25 @@ gp_buttons = [
 helpmenu = [
     [
         InlineKeyboardButton(
-            text="🥀oynatma komutları🥀",
+            text="🎧oynatma komutları🎧",
             callback_data="fallen_cb help",
         )
     ],
     [
-        InlineKeyboardButton(text="🥀yönetim🥀", callback_data="fallen_cb sudo"),
-        InlineKeyboardButton(text="🥀sahibi🥀", callback_data="fallen_cb owner"),
+        InlineKeyboardButton(text="🛠️yönetim⚒️", callback_data="fallen_cb sudo"),
+        InlineKeyboardButton(text="👑sahibi👑", callback_data="fallen_cb owner"),
     ],
     [
         InlineKeyboardButton(text="🥀geri🥀", callback_data="fallen_home"),
-        InlineKeyboardButton(text="🥀geri🥀", callback_data="close"),
+        InlineKeyboardButton(text="🥀kapat🥀", callback_data="close"),
     ],
 ]
 
 
 help_back = [
-    [InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT)],
+    [InlineKeyboardButton(text="📩 gurup 📩", url=config.SUPPORT_CHAT)],
     [
-        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="fallen_help"),
-        InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
+        InlineKeyboardButton(text="🥀geri🥀", callback_data="fallen_help"),
+        InlineKeyboardButton(text="🥀kapat🥀", callback_data="close"),
     ],
 ]
