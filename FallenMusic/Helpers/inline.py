@@ -58,7 +58,7 @@ pm_buttons = [
         InlineKeyboardButton(
             text="☁️ kaynak kod ☁️", url="https://github.com/AnonymousX1025/FallenMusic"
         ),
-        InlineKeyboardButton(text="👑 sahibi 👑", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="👑 kurucu hanım👑", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -78,7 +78,7 @@ gp_buttons = [
         InlineKeyboardButton(
             text="☁️ kaynak kod ☁️", url="https://github.com/TheAnonymous2005/FallenMusic"
         ),
-        InlineKeyboardButton(text="👑 sahibi 👑", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="👑 kurucu hanım👑", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -92,7 +92,7 @@ helpmenu = [
     ],
     [
         InlineKeyboardButton(text="🛠️yönetim⚒️", callback_data="fallen_cb sudo"),
-        InlineKeyboardButton(text="👑sahibi👑", callback_data="fallen_cb owner"),
+        InlineKeyboardButton(text="👑 kurucu hanım 👑", callback_data="fallen_cb owner"),
     ],
     [
         InlineKeyboardButton(text="🥀geri🥀", callback_data="fallen_home"),
