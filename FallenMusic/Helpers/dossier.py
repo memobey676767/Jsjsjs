@@ -1,4 +1,4 @@
-# MIT License
+,xz# MIT License
 #
 # Copyright (c) 2023 AnonymousX1025
 #
@@ -45,6 +45,8 @@ HELP_TEXT = f"""
 ๏ /devam : şarkıyı calmaya devam eder.
 ๏ /atla : sıradaki parçaya atlatır.
 ๏ /son : şarkıyı kapatır.
+
+/dongu : şarkıyı tekrarlar
 
 ๏ /ping : sʜᴏᴡ ᴛʜᴇ ᴩɪɴɢ ᴀɴᴅ sʏsᴛᴇᴍ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
 ๏ /sudolist : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ sᴜᴅᴏ ᴜsᴇʀs ᴏғ ᴛʜᴇ ʙᴏᴛ.
