@@ -121,7 +121,7 @@ async def play(_, message: Message):
             await app2.join_chat(invitelink)
             await asyncio.sleep(2)
             await fallen.edit_text(
-                f"{ASS_NAME} ᴊᴏɪɴᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ,\n\nsᴛᴀʀᴛɪɴɢ sᴛʀᴇᴀᴍ..."
+                f"{ASS_NAME} başarıyla katıldı,\n\n yayın başladı..."
             )
         except UserAlreadyParticipant:
             pass
@@ -221,7 +221,7 @@ async def play(_, message: Message):
         qimg = await gen_qthumb(videoid, message.from_user.id)
         await message.reply_photo(
             photo=qimg,
-            caption=f"*şarkı sıraya eklendi {position}**\n\n‣ **🥀bilgi :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **🥀süre :** `{duration}` 🥀dakika\n‣ **🥀istek sahibi :** {ruser}",
+            caption=f"*şarkı sıraya eklendi {position}**\n\n‣ **bilgi :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **süre :** `{duration}` dakika\n‣ **istek sahibi :** {ruser}",
             reply_markup=buttons,
         )
     else:
@@ -239,7 +239,7 @@ async def play(_, message: Message):
             )
         except TelegramServerError:
             return await fallen.edit_text(
-                "» ᴛᴇʟᴇɢʀᴀᴍ ɪs ʜᴀᴠɪɴɢ sᴏᴍᴇ ɪɴᴛᴇʀɴᴀʟ ᴘʀᴏʙʟᴇᴍs, ᴘʟᴇᴀsᴇ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ."
+                "» Telegram'da bazı dahili sorunlar yaşanıyor. Lütfen görüntülü sohbeti yeniden başlatıp tekrar deneyin.."
             )
         except UnMuteNeeded:
             return await fallen.edit_text(
