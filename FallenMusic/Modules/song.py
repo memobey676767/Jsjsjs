@@ -64,7 +64,7 @@ async def song(_, message: Message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"☁️ **bilgi :** [{title[:23]}]({link})\n⏱️ **süre :** `{duration}`\n **talep eden :** {BOT_MENTION}"
+        rep = f"☁️ **BİLGİ :** [{title[:23]}]({link})\n⏱️ **SÜRE :** `{duration}`\n **TALEP EDEN :** {BOT_MENTION}"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
@@ -91,26 +91,26 @@ async def song(_, message: Message):
             )
             if message.chat.type != ChatType.PRIVATE:
                 await message.reply_text(
-                    "Lütfen pm'inizi kontrol edin, istediğiniz şarkıyı oraya gönderin."
+                    "hayatım belki özeldir o yüzden özele attım şarkıyı pm bak."
                 )
         except:
             start_butt = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴄʟɪᴄᴋ ʜᴇʀᴇ",
+                            text="TIKLA",
                             url=f"https://t.me/{BOT_USERNAME}?start",
                         )
                     ]
                 ]
             )
             return await m.edit_text(
-                text="ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴀɴᴅ sᴛᴀʀᴛ ᴍᴇ ғᴏʀ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴏɴɢs.",
+                text="Aşağıdaki butona tıklayın ve oğulları indirmek için beni başlatın.",
                 reply_markup=start_butt,
             )
         await m.delete()
     except:
-        return await m.edit_text("ғᴀɪʟᴇᴅ ᴛᴏ ᴜᴘʟᴏᴀᴅ ᴀᴜᴅɪᴏ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ sᴇʀᴠᴇʀs.")
+        return await m.edit_text("Telegram sunucularına ses yüklenemedi.")
 
     try:
         os.remove(audio_file)
