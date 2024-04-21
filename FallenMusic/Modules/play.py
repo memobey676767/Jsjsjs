@@ -66,7 +66,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
     & ~filters.via_bot
 )
 async def play(_, message: Message):
-    fallen = await message.reply_text("» şarkıyı açıyorum aşkım bekle😘")
+    fallen = await message.reply_text("» 𝚜̧𝚊𝚛𝚔ｪ 𝚒𝚜̧𝚕𝚎𝚗𝚒𝚢𝚘𝚛 𝚕𝚞̈𝚝𝚏𝚎𝚗 𝚋𝚎𝚔𝚕𝚎𝚢𝚒𝚗..")
     try:
         await message.delete()
     except:
@@ -77,7 +77,7 @@ async def play(_, message: Message):
             get = await app.get_chat_member(message.chat.id, ASS_ID)
         except ChatAdminRequired:
             return await fallen.edit_text(
-                f"» kullanıcıları davet etme bağlantısı yoluyla davet etme iznim yok {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
+                f"» 𝚔𝚞𝚜̧𝚜̧𝚊𝚗ｪ𝚌ｪ 𝚍𝚊𝚟𝚎𝚝 𝚎𝚝𝚖𝚎 𝚋𝚊𝚐̆𝚕𝚊𝚗𝚝ｪ𝚜ｪ 𝚢𝚘𝚕𝚞𝚢𝚕𝚊 𝚍𝚊𝚟𝚎𝚝 𝚎𝚝𝚖𝚎 𝚒𝚣𝚗𝚒𝚖 𝚢𝚘𝚔 {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
             )
         if get.status == ChatMemberStatus.BANNED:
             unban_butt = InlineKeyboardMarkup(
@@ -144,7 +144,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"» kusura bakma bebeğim, daha uzun takip ediyorum  {DURATION_LIMIT} dakikaların oynanmasına izin verilmiyor {BOT_NAME}."
+                f"» kusura bakma bebeği, daha uzun takip ediyorum  {DURATION_LIMIT} dakikaların oynanmasına izin verilmiyor {BOT_NAME}."
             )
 
         file_name = get_file_name(audio)
@@ -169,17 +169,17 @@ async def play(_, message: Message):
                 secmul *= 60
 
         except Exception as e:
-            return await fallen.edit_text(f"sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ\n\n**ᴇʀʀᴏʀ :** `{e}`")
+            return await fallen.edit_text(f"»davet edilmedi\n\n**asistan :** `{e}`")
 
         if (dur / 60) > DURATION_LIMIT:
             return await fallen.edit_text(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
+                f"» Üzgünüm bebeğim, daha uzun süre takip et  {DURATION_LIMIT} dakikaların oynanmasına izin verilmiyor {BOT_NAME}."
             )
         file_path = audio_dl(url)
     else:
-        if len(message.command) < 2:
-            return await fallen.edit_text("» ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?")
-        await fallen.edit_text("🎙️")
+        if len(message.command) <2:
+            return await fallen.edit_text("» ne oynatmak istersin bebeğim örnek /oynat taladro ?")
+        await fallen.edit_text("🎤")
         query = message.text.split(None, 1)[1]
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -199,7 +199,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             return await fallen.edit(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ ᴏɴ {BOT_NAME}."
+                f"»Üzgünüm bebeğim, daha uzun süre takip et {DURATION_LIMIT} dakikaların oynanmasına izin verilmiyor {BOT_NAME}."
             )
         file_path = audio_dl(url)
 
@@ -221,7 +221,7 @@ async def play(_, message: Message):
         qimg = await gen_qthumb(videoid, message.from_user.id)
         await message.reply_photo(
             photo=qimg,
-            caption=f"**✨sıraya eklendi aşkım {position}**\n\n‣ **🥀bilgi :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **🥀süre :** `{duration}` 🥀dakika\n‣ **🥀istek sahibi :** {ruser}",
+            caption=f"*şarkı sıraya eklendi {position}**\n\n‣ **🥀bilgi :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **🥀süre :** `{duration}` 🥀dakika\n‣ **🥀istek sahibi :** {ruser}",
             reply_markup=buttons,
         )
     else:
