@@ -52,7 +52,7 @@ HELP_TEXT = f"""
 
  /bul : şarkıyı arar bulur indirir.
 
- /search : bilgi arar.
+ /ara : bilgi arar.
 """
 
 HELP_SUDO = f"""
