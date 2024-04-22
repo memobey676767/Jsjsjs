@@ -170,7 +170,7 @@ async def admin_cbs(_, query: CallbackQuery):
             )
             return await query.message.reply_photo(
                 photo=img,
-                caption=f**ŞARKI BAŞLADI**\n\n‣ **BİLGİ :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **SÜRE :** `{duration}DAKİKA\n‣ **TALEP EDEN :** {req_by}",
+                caption=f"**ŞARKI BAŞLADI**\n\n‣ **BİLGİ :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **SÜRE :** `{duration}DAKİKA\n‣ **TALEP EDEN :** {req_by}",
                 reply_markup=buttons,
             )
 
