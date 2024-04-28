@@ -23,7 +23,7 @@
 from FallenMusic import BOT_NAME
 
 PM_START_TEXT = """
-𝙤̈𝙚𝙧𝙝𝙖𝙗𝙖 {0}, 🥀
+M𝙚𝙧𝙝𝙖𝙗𝙖 {0}, 🥀
 𝙗𝙚𝙣 ** {1} !
 
 🇹🇷𝙩𝙪̈𝙧𝙠𝙞𝙮𝙚𝙣𝙞𝙣 𝙚𝙣 𝙠𝙖𝙡𝙞𝙩𝙚𝙡𝙞 𝙢𝙪̈𝙯𝙞𝙠 𝙗𝙤𝙩𝙪.
