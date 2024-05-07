@@ -58,7 +58,7 @@ async def fallen_startup():
     try:
         await app.send_message(
             SUNAME,
-            f"✯ bot yeniden başladı sahibim @RAGNARbeyy𖢵 kimlik : `{BOT_ID}`\n𖢵 ismi : {BOT_NAME}\n𖢵 kullanıcı adı: @{BOT_USERNAME}",
+            f"✯ bot yeniden başladı sahibim @RAGNARbeyy 𖢵 kimlik : `{BOT_ID}`\n𖢵 ismi : {BOT_NAME}\n𖢵 kullanıcı adı: @{BOT_USERNAME}",
         )
     except:
         LOGGER.error(
