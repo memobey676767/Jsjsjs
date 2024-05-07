@@ -68,7 +68,7 @@ async def fallen_startup():
     try:
         await app2.send_message(
             SUNAME,
-            f"✯ ғᴀʟʟᴇɴ ᴍᴜsɪᴄ ᴀss ✯\n\n𖢵 ɪᴅ : `{ASS_ID}`\n𖢵 ɴᴀᴍᴇ : {ASS_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{ASS_USERNAME}",
+            f"✯ ben asistan ✯\n\n𖢵 kimliğim : `{ASS_ID}`\n𖢵 ismim : {ASS_NAME}\n𖢵 kullanıcı adım: @{ASS_USERNAME}",
         )
     except:
         LOGGER.error(
